@@ -1,5 +1,5 @@
 # NLP-BN-studentRequestApproval
-# 🏫 Institutional Leave Approval AI
+#  Institutional Leave Approval AI
 ### Hybrid NLP + Bayesian Network for Probabilistic Leave Decision Modeling
 
 <p align="center">
@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project implements a **hybrid AI system** that combines rule-based Natural Language Processing with a Bayesian Network to predict the probability of leave approval in an academic institution. A student submits a request in plain English — the system extracts intent and credibility from the text, maps them to probabilistic evidence, and infers approval probability through a multi-stakeholder hierarchy.
 
@@ -22,7 +22,7 @@ The project bridges two paradigms:
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Traditional approval systems apply hard rules: `if reason == medical → approve`. Real institutions are probabilistic. A medical claim with no paperwork is not the same as a marriage request with no paperwork.
 
@@ -34,7 +34,7 @@ Traditional approval systems apply hard rules: `if reason == medical → approve
 
 ---
 
-## 🔗 Network Structure
+##  Network Structure
 
 ```
 SRW → FP
@@ -62,7 +62,7 @@ PIP → OB
 
 ---
 
-## 🧠 Methodology
+##  Methodology
 
 ### 1. NLP Layer — Priority & Credibility Extraction
 The NLP layer is entirely rule-based. No trained model, no external dataset.
@@ -121,7 +121,7 @@ approval_prob = float(result.values[1])   # P(OB=1)
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Query / Case | Approx. Probability | Notes |
 |---|---|---|
@@ -145,7 +145,7 @@ priority = LOW, cs ≥ 0.60   → FP  = 1 (Rule B rescue)
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 leave-approval-ai/
@@ -160,7 +160,7 @@ leave-approval-ai/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option 1: Google Colab (Recommended)
 1. Upload `leave_approval_system.py` to Colab
@@ -194,7 +194,7 @@ print_report(text, result)
 
 ---
 
-## 🔬 Module Reference
+##  Module Reference
 
 | Function | Purpose |
 |----------|---------|
@@ -209,7 +209,7 @@ print_report(text, result)
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 1. **Keyword-only NLP** — Cannot handle paraphrasing or novel phrasing not in the dictionaries. Upgrading to a fine-tuned classifier would improve recall.
 2. **Synthetic data** — CPTs reflect designer priors, not real institutional records. Replace with historical data when available.
@@ -219,7 +219,7 @@ print_report(text, result)
 
 ---
 
-## 🔭 Future Improvements
+##  Future Improvements
 
 | Improvement | Technique | Benefit |
 |-------------|-----------|---------|
@@ -232,7 +232,7 @@ print_report(text, result)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Library | Purpose |
 |---------|---------|
@@ -242,13 +242,13 @@ print_report(text, result)
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use, modify, and cite.
 
 ---
 
-## 👤 Author
+##  Author
 
 **[Rushikesh Y. Dhote]**  
 B.Tech — [Industrial IoT]  
